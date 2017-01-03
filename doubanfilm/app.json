@@ -1,5 +1,6 @@
 {
   "pages":[
+    
     "pages/index/index",
     "pages/douban/in_theathers/in_theathers",
     "pages/douban/coming_soon/coming_soon",
