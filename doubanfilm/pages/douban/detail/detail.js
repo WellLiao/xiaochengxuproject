@@ -6,15 +6,12 @@ Page({
     film: {},
     options: null
   },
-  onReady: function(){
-    var that = this
-    wx.setNavigationBarTitle({
-      title: that.data.options.title
-    })
-  },
   onLoad: function (options) {
     var that = this
     var id = options.id
+    that.setData({
+      options: options
+    })
 
     fetch('https://api.douban.com/v2/movie/subject/' + id).then(function(response){
       if(response.status !== 200){
@@ -24,9 +21,15 @@ Page({
       response.json().then(function(data){
         that.setData({
           film: data,
-          options: options
+          //options: options
         })
       })
+    })
+  },
+  onReady: function(){
+    var that = this
+    wx.setNavigationBarTitle({
+      title: that.data.options.title
     })
   }
 })

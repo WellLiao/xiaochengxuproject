@@ -19,25 +19,25 @@
         </view>
         <view class="directors">
           <text class="label">导演：</text>
-          <block wx:key-items="{{film.directors}}" wx:key-item="director">
+          <block wx:for="{{film.directors}}" wx:for-item="director">
             <text class="person">{{director.name}}</text>
           </block>
         </view>
         <view class="casts">
           <text class="label">主演：</text>
-          <block wx:key-items="{{film.casts}}" wx:key-item="cast">
+          <block wx:for="{{film.casts}}" wx:for-item="cast">
             <text class="person">{{cast.name}}</text>
           </block>
         </view>
         <view class="genres">
           <text class="label">类型：</text>
-          <block wx:key-items="{{film.genres}}" wx:key-item="genre">
+          <block wx:for="{{film.genres}}" wx:for-item="genre">
             <text class="person">{{genre}}</text>
           </block>
         </view>
         <view class="genres">
           <text class="label">国家/地区：</text>
-          <block wx:key-items="{{film.countries}}" wx:key-item="country">
+          <block wx:for="{{film.countries}}" wx:for-item="country">
             <text class="person">{{country}}</text>
           </block>
         </view>
