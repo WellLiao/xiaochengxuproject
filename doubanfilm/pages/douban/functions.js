@@ -23,7 +23,7 @@ module.exports = {
 			url:'https://api.map.baidu.com/geocoder/v2/?ak=' + config.baiduAK + '&location=' + locationParam + '1&output=json&pois=1',
 			method: 'GET',
 			header: {
-			     "Content-Type": "application/json,application/json"
+			     "Content-Type": "application/json"
 			},
 			success: function(res){
 				store.location = res.data.result
@@ -61,7 +61,7 @@ module.exports = {
       // data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       header: {
-         "Content-Type": "application/json,application/json"
+         "Content-Type": "application/json,application/json" //很奇怪删除一个application/json就不行了
       }, // 设置请求的 header
       success: function(res){
         // success
