@@ -1,0 +1,6 @@
+<!-- page for test -->
+<view class="container">
+ <view gotest="gototest" class="usermotto">
+    <text class="user-motto">gototest</text>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/liao/test",
+    "pages/component/index",
+    "pages/component/component-pages/action-sheet/action-sheet",
+    "pages/component/component-pages/audio/audio",
+    "pages/component/component-pages/button/button",
+    "pages/component/component-pages/canvas/canvas",
+    "pages/component/component-pages/checkbox/checkbox",
+    "pages/component/component-pages/form/form",
+    "pages/component/component-pages/icon/icon",
+    "pages/component/component-pages/image/image",
+    "pages/component/component-pages/input/input",
+    "pages/component/component-pages/map/map",
+    "pages/component/component-pages/modal/modal",
+    "pages/component/component-pages/navigator/navigator",
+    "pages/component/component-pages/progress/progress",
+    "pages/component/component-pages/radio/radio",
+    "pages/component/component-pages/scroll-view/scroll-view",
+    "pages/component/component-pages/slider/slider",
+    "pages/component/component-pages/switch/switch",
+    "pages/component/component-pages/text/text",
+    "pages/component/component-pages/toast/toast",
+    "pages/component/component-pages/video/video",
+    "pages/component/component-pages/view/view",
+    "pages/component/component-pages/swiper/swiper",
+    "pages/component/component-pages/slide-tab/slide-tab",
+    "pages/component/component-pages/label/label",
+    "pages/component/component-pages/loading/loading",
+    "pages/component/component-pages/navigator/navigate",
+    "pages/component/component-pages/navigator/redirect",
+    "pages/component/component-pages/picker/picker",
+
+    "pages/API/index/index",
+
+    "pages/API/login/login",
+    "pages/API/get-user-info/get-user-info",
+    "pages/API/request-payment/request-payment",
+
+    "pages/API/set-navigation-bar-title/set-navigation-bar-title",
+    "pages/API/navigation-bar-loading/navigation-bar-loading",
+    "pages/API/navigator/navigator",
+    "pages/API/pull-down-refresh/pull-down-refresh",
+    "pages/API/animation/animation",
+
+    "pages/API/get-network-type/get-network-type",
+    "pages/API/get-system-info/get-system-info",
+    "pages/API/on-compass-change/on-compass-change",
+
+    "pages/API/request/request",
+    "pages/API/web-socket/web-socket",
+    "pages/API/upload-file/upload-file",
+    "pages/API/download-file/download-file",
+    
+
+    "pages/API/image/image",
+    "pages/API/voice/voice",
+    "pages/API/file/file",
+    "pages/API/on-accelerometer-change/on-accelerometer-change",
+    "pages/API/canvas/canvas",
+    "pages/API/background-audio/background-audio",
+    "pages/API/video/video",
+
+    "pages/API/get-location/get-location",
+    "pages/API/open-location/open-location",
+
+    "pages/API/storage/storage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
