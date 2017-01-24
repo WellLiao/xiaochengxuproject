@@ -1,7 +1,8 @@
 var config = require('comm/script/config')
 App({
   globalData: {
-    userInfo: null
+    userInfo: null,
+    code: null
   },
   onLaunch: function() {
     // 获取用户信息
@@ -12,7 +13,15 @@ App({
   getUserInfo:function(cb){
     var that = this
     wx.login({
-      success: function () {
+      success: function (res) {
+        that.globalData.code = res.code
+        wx.setStorage({
+            key:"code",
+            data:res.code,
+            fail: function(){
+              console.log("setStorage is error")
+            }
+        })
         wx.getUserInfo({
           success: function (res) {
             that.globalData.userInfo = res.userInfo
